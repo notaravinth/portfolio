@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Aravinth, a full-stack developer with a passion for web development.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Description of Project 1</p>
+                    <a href="#">View Project</a>
+                </div>
+
+                <div class="project">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Description of Project 2</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-event">
+                    <span class="date">2020</span>
+                    <p>Started my first job as a web developer.</p>
+                </div>
+
+                <div class="timeline-event">
+                    <span class="date">2021</span>
+                    <p>Launched my first big project.</p>
+                </div>
+
+                <div class="timeline-event">
+                    <span class="date">2022</span>
+                    <p>Joined an international company as a lead developer.</p>
+                </div>
+
+                <div class="timeline-event">
+                    <span class="date">2023</span>
+                    <p>Started freelancing full-time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+
+
+    <script src="portfolio.js"></script>
+    <script>
+        const container = document.querySelector('.container');
+        
+
+        container.addEventListener('wheel', (e) => {
+            e.preventDefault();
+        
+            
+            container.scrollLeft += e.deltaY * 3; 
+        });
+        </script>
+</body>
+</html>
